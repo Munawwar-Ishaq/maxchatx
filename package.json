@@ -1,12 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "MaxChat App Backend All API's Author Munawwar Ishaq",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Munawwar Ishaq",
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^8.1.3",

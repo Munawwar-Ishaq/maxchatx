@@ -25,7 +25,11 @@ const port = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', // Allow only this origin
+  methods: ['GET', 'POST'], // Allow only specified methods
+  allowedHeaders: ['Content-Type'], // Allow only specified headers
+));
 
 app.get('/', (req, res) => {
   res.send('hello');

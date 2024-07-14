@@ -11,6 +11,8 @@ const DB_CONNECTION = () => {
   mongoose
     .connect(DB_URI, {
       dbName: "chatApp",
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     })
     .then(() => {
       // console.log("Connection established");
